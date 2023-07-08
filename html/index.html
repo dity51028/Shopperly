@@ -16,17 +16,16 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
     
- <section id="header">
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/assets/logo.png" class="img-fluid">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="ti-align-justify navbar-toggler-icon"></span>
-            <!--<span class="navbar-toggler-icon"></span>-->
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+  <section id="header">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/logo.png" class="img-fluid" style="width: 50%; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-align-justify navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#Home">Home</a>
@@ -50,6 +49,48 @@
       </nav>
  </section>   
 
+ <!--home-->
+ <section id="home" class="home  overflow-hidden">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <div class="home-banner home-banner-1">
+        <div class="home-banner-text">
+          <h1>Women</h1>
+          <h2>52% Discount For This Season </h2>
+          <a href="#" class="btn btn-danger text-uppercae mt-4">Our products</a>
+        </div>
+       </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item active">
+       <div class="home-banner home-banner-2">
+        <div class="home-banner-text">
+           <img src="/assets/logo.png" class="img-fluid" >
+          <h2>Working with card & paypal </h2>
+          <a href="#" class="btn btn-danger text-uppercae mt-4">Our products</a>
+        </div>
+       </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+        <span class="ti-angle-left slider-icon"></span>
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="ti-angle-right slider-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </section>
 
 
 
