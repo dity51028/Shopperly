@@ -15,84 +15,175 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-    
+
+  <!-- Navigation section -->
   <section id="header">
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="/assets/logo.png" class="img-fluid" style="width: 50%; height: auto;">
+          <img decoding="async" src="/assets/logo.png" class="img-fluid" style="max-width: 40%; height: auto;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="ti-align-justify navbar-toggler-icon"></span>
+              <span class="ti-align-justify navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Special">Special</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Contacts">Contacts</a>
-              </li>
-              
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#special">Special</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+   
+
+  <!-- Home section --> 
+  <section id="home" class="home pt-5 overflow-hidden">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="home-banner home-banner-1">
+            <div class="home-banner-text">
+              <h1>Women</h1>
+              <h2>52% Discount For This Season</h2>
+              <a href="#" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+            </div>
           </div>
         </div>
-      </nav>
- </section>   
-
- <!--home-->
- <section id="home" class="home  overflow-hidden">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-       <div class="home-banner home-banner-1">
-        <div class="home-banner-text">
-          <h1>Women</h1>
-          <h2>52% Discount For This Season </h2>
-          <a href="#" class="btn btn-danger text-uppercae mt-4">Our products</a>
-        </div>
-       </div>
+        <div class="carousel-item">
+          <div class="home-banner home-banner-2">
+            <div class="home-banner-text">
+              <h1>Shopperly</h1>
+              <h2>With Working Card & Pay Pal</h2>
+              <a href="#" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+            </div>
+          </div>
+        </div> 
       </div>
-      <div class="carousel-item">
-        <div class="carousel-item active">
-       <div class="home-banner home-banner-2">
-        <div class="home-banner-text">
-           <img src="/assets/logo.png" class="img-fluid" >
-          <h2>Working with card & paypal </h2>
-          <a href="#" class="btn btn-danger text-uppercae mt-4">Our products</a>
-        </div>
-       </div>
-      </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <span class="ti-angle-left slider-icon"></span>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <span class="ti-angle-right slider-icon"></span>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true">
-        <span class="ti-angle-left slider-icon"></span>
-      </span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="ti-angle-right slider-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- </section>
 
+    <!-- Offer section -->
+    <div class="offers">
+      <div class="container">
+        <div class="row">
+          <!-- Offer Box One -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img decoding="async" src="/assets/images/offer1.jpg" alt="Offers" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">Sale 30%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- offer Box Two -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+            <a href="#">
+              <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img decoding="async" src="/assets/images/offer2.jpg" alt="Offers" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">Sale 70%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img decoding="async" src="/assets/images/offer3.jpg" alt="Offers" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">Sale 50%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
+          <!-- offer Box Three -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img decoding="async" src="/assets/images/offer4.jpg" alt="Offers" class="img-fluid">
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">Sale 25%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">Don't Miss This Chance</p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Shop Now</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+     
+
+  <!--product section-->
+  <section id="products" class="products">
+    <div class="container"></div>
+  </section>
 
 </body>
 
